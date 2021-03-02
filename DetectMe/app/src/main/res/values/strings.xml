@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Detect Me</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="barcode">Barcode</string>
+    <string name="face">Face</string>
+    <string name="object">Object</string>
+    <string name="text">Text</string>
+</resources>

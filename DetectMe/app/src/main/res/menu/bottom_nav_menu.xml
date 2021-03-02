@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/barcodeFragment"
+        android:title="@string/barcode"
+        android:icon="@drawable/ic_barcode"/>
+
+    <item
+        android:id="@+id/faceFragment"
+        android:title="@string/face"
+        android:icon="@drawable/ic_face"/>
+
+    <item
+        android:id="@+id/objectFragment"
+        android:title="@string/object"
+        android:icon="@drawable/ic_object"/>
+
+    <item
+        android:id="@+id/textFragment"
+        android:title="@string/text"
+        android:icon="@drawable/ic_text"/>
+</menu>

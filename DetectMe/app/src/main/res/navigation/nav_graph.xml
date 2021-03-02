@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/barcodeFragment">
+
+    <fragment
+        android:id="@+id/barcodeFragment"
+        android:name="com.detect.me.ui.barcode.BarcodeFragment"
+        android:label="fragment_barcode"
+        tools:layout="@layout/fragment_barcode" />
+    <fragment
+        android:id="@+id/faceFragment"
+        android:name="com.detect.me.ui.face.FaceFragment"
+        android:label="fragment_face"
+        tools:layout="@layout/fragment_face" />
+    <fragment
+        android:id="@+id/objectFragment"
+        android:name="com.detect.me.ui.object.ObjectFragment"
+        android:label="fragment_object"
+        tools:layout="@layout/fragment_object" />
+    <fragment
+        android:id="@+id/textFragment"
+        android:name="com.detect.me.ui.text.TextFragment"
+        android:label="fragment_text"
+        tools:layout="@layout/fragment_text" />
+</navigation>
