@@ -1,4 +1,4 @@
-    package com.detect.me.utils
+package com.detect.me.utils
 
 import android.content.Context
 import android.content.Intent

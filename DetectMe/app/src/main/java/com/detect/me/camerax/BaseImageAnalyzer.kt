@@ -1,16 +1,15 @@
 package com.detect.me.camerax
 
-import android.annotation.SuppressLint
 import android.graphics.Rect
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageProxy
 import com.google.android.gms.tasks.Task
 import com.google.mlkit.vision.common.InputImage
 
-abstract class BaseImageAnalyzer<T>: ImageAnalysis.Analyzer {
+abstract class  BaseImageAnalyzer<T>: ImageAnalysis.Analyzer {
     abstract val graphicOverlay: GraphicOverlay
 
-    @SuppressLint("UnsafeExperimentalUsageError")
+    @androidx.camera.core.ExperimentalGetImage
     override fun analyze(imageProxy: ImageProxy) {
         val mediaImage = imageProxy.image
         mediaImage?.let {
@@ -22,10 +21,10 @@ abstract class BaseImageAnalyzer<T>: ImageAnalysis.Analyzer {
                         it.cropRect
                     )
                 }
-                .addOnFailureListener {
+                .addOnFailureListener { exception ->
                     graphicOverlay.clear()
                     graphicOverlay.postInvalidate()
-                    onFailure(it)
+                    onFailure(exception)
                 }
                 .addOnCompleteListener {
                     imageProxy.close()

@@ -18,6 +18,7 @@ import com.detect.me.mlkit.vision.text.TextRecognitionProcessor
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
+
 class CameraManager(
     private val context: Context,
     private val finderView: PreviewView,

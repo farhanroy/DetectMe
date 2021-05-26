@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
         activityScope.launch {
             delay(3000)
 
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashActivity, PoseActivity::class.java))
             finish()
         }
     }

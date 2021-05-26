@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                 setupNavigation()
             } else finish()
         }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 
     private fun checkPermission() {
@@ -64,8 +65,4 @@ class MainActivity : AppCompatActivity() {
                 android.Manifest.permission.CAMERA
         )
     }
-
-
-
-
 }
